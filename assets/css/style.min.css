@@ -664,16 +664,13 @@ body {
   align-items: center;
   box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
   background-color: #202020;
+  background-image: url(../images/sidebar/bg.png);
   background-repeat: no-repeat;
   background-position: center top;
   position: fixed;
   top: 0;
   left: 0;
   font-family: "Roboto", sans-serif; }
-  .no-webp .sidebar {
-    background-image: url(../images/sidebar/bg.png); }
-  .webp .sidebar {
-    background-image: url(../images/sidebar/bg.webp); }
   .sidebar__avatar {
     margin: 0px 0px 22px 0px;
     width: 100px;
