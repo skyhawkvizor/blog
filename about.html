@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+	<!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"> -->
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	
 	<!-- Useful meta tags -->
@@ -18,78 +20,81 @@
 	<link rel="preload" as="font" href="assets/fonts/Lato/lato-v17-latin-regular.woff2" type="font/woff2"
 		crossorigin="anonymous">
 	
+	
 	<title>About</title></head>
 
 <body>
 	<header class="header">
-	<div class="header__left">
-		<nav class="page-nav">
-			<ul class="page-nav__list">
-				<li class="page-nav__item">
-					<a href="index.html" class="page-nav__link">
-						Главная
-					</a>
-				</li>
-				<li class="page-nav__item">
-					<a href="#" class="page-nav__link has--arrow">
-						Статьи
-					</a>
-					<ul class="page-nav__sub-list">
-						<li class="page-nav__sub-item">
-							<a href="#" class="page-nav__sub-link">
-								Создание сайтов
-							</a>
-						</li>
-						<li class="page-nav__sub-item">
-							<a href="#" class="page-nav__sub-link">
-								Интернет-маркетинг
-							</a>
-						</li>
-						<li class="page-nav__sub-item">
-							<a href="#" class="page-nav__sub-link">
-								Продвижение видео
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="page-nav__item">
-					<a href="about.html" class="page-nav__link">
-						Обо мне
-					</a>
-				</li>
-				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
-						Реклама
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div class="header__right">
-		<nav class="page-nav page-nav_profile">
-			<ul class="page-nav__list">
-				<li class="page-nav__item">
-					<a href="profile.html" class="page-nav__link">
-						Профиль
-					</a>
-				</li>
-				<li class="page-nav__item">
-					<a href="auth.html" class="page-nav__link">
-						Вход
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<form action="search.html" method="Get" class="search-form">
-			<label for="search-form__input" class="search-form__input">
-				Поиск по блогу
-				<input id="search-form__input" type="text" placeholder="Поиск по блогу">
-			</label>
-		</form>
-	</div>
-
-</header> -->
-
+		<div class="header__left">
+			<div class="header__burger burger">
+				<span></span>
+			</div>
+			<nav class="page-nav" data-da="sidebar, 1, 750">
+				<ul class="page-nav__list">
+					<li class="page-nav__item page-nav__item_main">
+						<a href="index.html" class="page-nav__link">
+							Главная
+						</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="#" class="page-nav__link has--arrow">
+							Статьи
+						</a>
+						<ul class="page-nav__sub-list">
+							<li class="page-nav__sub-item">
+								<a href="#" class="page-nav__sub-link">
+									Создание сайтов
+								</a>
+							</li>
+							<li class="page-nav__sub-item">
+								<a href="#" class="page-nav__sub-link">
+									Интернет-маркетинг
+								</a>
+							</li>
+							<li class="page-nav__sub-item">
+								<a href="#" class="page-nav__sub-link">
+									Продвижение видео
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="page-nav__item">
+						<a href="about.html" class="page-nav__link">
+							Обо мне
+						</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="#" class="page-nav__link">
+							Реклама
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__right">
+			<nav class="page-nav page-nav_profile" data-da="sidebar, 2, 750">
+				<ul class="page-nav__list">
+					<li class="page-nav__item">
+						<a href="profile.html" class="page-nav__link">
+							Профиль
+						</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="auth.html" class="page-nav__link">
+							Вход
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<form action="search.html" method="Get" class="search-form">
+				<label for="search-form__input" class="search-form__input">
+					Поиск по блогу
+					<input id="search-form__input" type="text" placeholder="Поиск по блогу">
+				</label>
+			</form>
+		</div>
+	
+	</header>
 	<main class="main">
 		<div class="container page">
 			
@@ -127,7 +132,7 @@
 						posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
 						lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
 					</p>
-					<img src="assets/images/article/3.webp" width="557" height="232" alt="img">
+					<img src="assets/images/article/3.png" width="557" height="232" alt="img">
 					<p class="post__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
 						posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
@@ -142,7 +147,9 @@
 						Обсуждение
 					</h2>
 					<form action="#" class="add-comment__form" method="POST">
-						<textarea name="coment" class="add-comment__input" placeholder="Текст комментария"></textarea>
+						<label for="about__text" class="add-comment__input">
+							<textarea id="about__text" placeholder="Текст комментария"></textarea>
+						</label>
 						<button name="submit" type="submit" class="buttons__button buttons__button_button buttons__button_rect">
 							Отправить
 						</button>
@@ -189,29 +196,31 @@
 	</main>
 
 	<aside class="sidebar">
-		<img src="assets/images/sidebar/avatar.png" srcset="assets/images/sidebar/avatar@2x.png 2x,
-			assets/images/sidebar/avatar@3x.png 3x,
-			assets/images/sidebar/avatar@4x.png 4x" class="sidebar__avatar" width="100" height="100" alt="img">
-		<div class="sidebar__name">
-			Дмитрий Валак
+		<div class="sidebar__header">
+			<img src="assets/images/sidebar/avatar.png" srcset="assets/images/sidebar/avatar@2x.png 2x,
+				assets/images/sidebar/avatar@3x.png 3x,
+				assets/images/sidebar/avatar@4x.png 4x" class="sidebar__avatar" width="100" height="100" alt="img">
+			<div class="sidebar__name">
+				Дмитрий Валак
+				<span class="sidebar__duty">
+					блог front-end разработчика
+				</span>
+			</div>
+			<ul class="sidebar__social-list social">
+				<li class="social__item">
+					<a href="#" class="social__link social__link_instagram" rel="nofollow noopener noreferrer" target="_blank"
+						title="instagram"></a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link social__link_vkontakte" rel="nofollow noopener noreferrer" target="_blank"
+						title="vkontakte"></a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link social__link_pinterest" rel="nofollow noopener noreferrer" target="_blank"
+						title="pinterest"></a>
+				</li>
+			</ul>
 		</div>
-		<div class="sidebar__duty">
-			блог front-end разработчика
-		</div>
-		<ul class="sidebar__social-list social">
-			<li class="social__item">
-				<a href="#" class="social__link social__link_instagram" rel="nofollow noopener noreferrer" target="_blank"
-					title="instagram"></a>
-			</li>
-			<li class="social__item">
-				<a href="#" class="social__link social__link_vkontakte" rel="nofollow noopener noreferrer" target="_blank"
-					title="vkontakte"></a>
-			</li>
-			<li class="social__item">
-				<a href="#" class="social__link social__link_pinterest" rel="nofollow noopener noreferrer" target="_blank"
-					title="pinterest"></a>
-			</li>
-		</ul>
 		<p class="sidebar__text sidebar__text_up">
 			Front-end разработчик. Практик верстки сайтов.
 		</p>
@@ -232,19 +241,17 @@
 			</li>
 		</ul>
 	</aside>
-	<footer>Footer</footer>
-
-	<!-- <div class="modal">
-	<div class="modal__content">
-		<div class="preview video">
-			<iframe src="https://www.youtube.com/embed/p4zbV1MBJNs" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen title="video">
-			</iframe>
+	<footer></footer>
+	<div class="modal">
+		<div class="modal__content">
+			<div class="preview video video_modal">
+				<iframe src="https://www.youtube.com/embed/p4zbV1MBJNs" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen title="video">
+				</iframe>
+			</div>
 		</div>
 	</div>
-</div>
-
 	<div class="modal">
 		<div class="modal__content">
 			<button class="close" aria-label="close">
@@ -274,39 +281,43 @@
 		</div>
 	</div>
 	<div class="modal">
-	<div class="modal__content">
-		<button class="close" aria-label="close">
-			<svg class="close__icon">
-				<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
-			</svg>
-		</button>
-		<div class="contact">
-			<form action="#" class="add-comment__form add-comment__form_center add-comment__form_mb22" method="POST">
-				<div class="add-comment__fields add-comment__fields_w340 add-comment__fields_center">
-					<input type="text" class="add-comment__input add-comment__input_pd-mr add-comment__input_no-h"
-						placeholder="Имя фамилия" value="Дмитрий Валак">
-					<input type="email" class="add-comment__input add-comment__input_pd-mr add-comment__input_no-h"
-						placeholder="E-mail">
-					<textarea class="add-comment__input add-comment__input_pd-mr" placeholder="Текст сообщения"></textarea>
+		<div class="modal__content">
+			<button class="close" aria-label="close">
+				<svg class="close__icon">
+					<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+				</svg>
+			</button>
+			<div class="contact">
+				<form action="#" class="add-comment__form add-comment__form_w340 add-comment__form_mb22" method="POST">
+					<label for="modal_name" class="add-comment__input add-comment__input_pd-mr add-comment__input_no-h">
+						<input id="modal_name" type="text" placeholder="Имя фамилия" value="Дмитрий Валак">
+					</label>
+					<label for="modal_email" class="add-comment__input add-comment__input_pd-mr add-comment__input_no-h">
+						<input id="modal_email" type="email" placeholder="E-mail">
+					</label>
+					<label for="modal__text" class="add-comment__input add-comment__input_pd-mr">
+						<textarea id="modal__text" placeholder="Текст сообщения"></textarea>
+					</label>
 					<button name="submit" type="submit"
 						class="add-comment__submit buttons__button buttons__button_button buttons__button_rect">
 						Отправить
 					</button>
-				</div>
-			</form>
-			<ul class="add-comment__reg-buttons reg-buttons reg-buttons_center">
-				<li class="reg-buttons__item reg-buttons__item_grey">
-					e-mail: <a href="mailto:info@mywebsite.ru" class="reg-buttons__link">info@mywebsite.ru</a>
-				</li>
-				<li class="reg-buttons__item reg-buttons__item_grey">
-					тел: <a href="tel:+94323285622" class="reg-buttons__link">+943-232-856-22</a>
-				</li>
-			</ul>
+				</form>
+				<ul class="add-comment__reg-buttons reg-buttons reg-buttons_block450">
+					<li class="reg-buttons__item reg-buttons__item_grey">
+						e-mail: <a href="mailto:info@mywebsite.ru" class="reg-buttons__link">info@mywebsite.ru</a>
+					</li>
+					<li class="reg-buttons__item reg-buttons__item_grey">
+						тел: <a href="tel:+94323285622" class="reg-buttons__link">+943-232-856-22</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</div> -->
+	</div>	<script defer src="assets/js/jquery.js"></script>
+	<!-- <script defer src="assets/js/slick.min.js"></script> -->
+	<script defer src="assets/js/breakpoint.js"></script>
 
-	<script src="assets/js/app.js"></script>
+	<script defer src="assets/js/app.js"></script>
 </body>
 
 </html>
