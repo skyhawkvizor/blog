@@ -726,16 +726,13 @@ body {
         font-family: "Roboto", sans-serif; }
 
 .sidebar {
-  padding: 13em 2em 2em 2em;
+  padding: 0em 2em 2em 2em;
   width: 300px;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-image: url(../images/sidebar/bg.png);
   background-color: #202020;
-  background-repeat: no-repeat;
-  background-position: center top;
   box-shadow: 0.5em 0 1.5em rgba(5, 5, 5, 0.9);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -744,34 +741,6 @@ body {
   left: 0;
   bottom: 0;
   opacity: 1; }
-  .no-webp .sidebar {
-    background-image: url(../images/sidebar/bg.png);
-    /* @2x Images (Pixel Ratio of 1.25+) */
-    /* @3x Images (Pixel Ratio of 2.25+) */
-    /* @4x Images (Pixel Ratio of 3.25+) */ }
-    @media only screen and (-o-min-device-pixel-ratio: 5 / 4), only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-      .no-webp .sidebar {
-        background-image: url(../images/sidebar/bg@2x.png); } }
-    @media only screen and (-o-min-device-pixel-ratio: 9 / 4), only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-      .no-webp .sidebar {
-        background-image: url(../images/sidebar/bg@3x.png); } }
-    @media only screen and (-o-min-device-pixel-ratio: 13 / 4), only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-      .no-webp .sidebar {
-        background-image: url(../images/sidebar/bg@4x.png); } }
-  .webp .sidebar {
-    background-image: url(../images/sidebar/bg.webp);
-    /* @2x Images (Pixel Ratio of 1.25+) */
-    /* @3x Images (Pixel Ratio of 2.25+) */
-    /* @4x Images (Pixel Ratio of 3.25+) */ }
-    @media only screen and (-o-min-device-pixel-ratio: 5 / 4), only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 1.25dppx) {
-      .webp .sidebar {
-        background-image: url(../images/sidebar/bg@2x.webp); } }
-    @media only screen and (-o-min-device-pixel-ratio: 9 / 4), only screen and (-webkit-min-device-pixel-ratio: 2.25), only screen and (min-device-pixel-ratio: 2.25), only screen and (min-resolution: 2.25dppx) {
-      .webp .sidebar {
-        background-image: url(../images/sidebar/bg@3x.webp); } }
-    @media only screen and (-o-min-device-pixel-ratio: 13 / 4), only screen and (-webkit-min-device-pixel-ratio: 3.25), only screen and (min-device-pixel-ratio: 3.25), only screen and (min-resolution: 3.25dppx) {
-      .webp .sidebar {
-        background-image: url(../images/sidebar/bg@4x.webp); } }
   @media (max-width: 1000px) {
     .sidebar {
       width: 270px;
@@ -779,7 +748,7 @@ body {
       top: 4em; } }
   @media (max-width: 750px) {
     .sidebar {
-      padding: 8.3em 2em 2em 2em;
+      padding: 0em 2em 2em 2em;
       width: 300px;
       align-items: flex-start;
       font-size: 1rem;
@@ -796,15 +765,19 @@ body {
         transition-duration: 0.3s;
         pointer-events: all; } }
   .sidebar__header {
+    margin: -5em 0px 0px 0px;
     display: flex;
     flex-flow: column;
     align-items: center; }
     @media (max-width: 750px) {
       .sidebar__header {
+        margin: -2em 0px 0px 0px;
         flex-flow: row;
         align-items: stretch; } }
+  .sidebar__bg {
+    margin: 0em -2em 0em -2em; }
   .sidebar__avatar {
-    margin: 0px 0px 2.2em 0px;
+    margin: 0em 0px 2.2em 0px;
     width: 10em;
     height: 10em;
     background-color: #ffffff;

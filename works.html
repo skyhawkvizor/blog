@@ -29,7 +29,7 @@
 			<div class="header__burger burger">
 				<span></span>
 			</div>
-			<nav class="page-nav" data-da="sidebar, 1, 750">
+			<nav class="page-nav" data-da="sidebar, 2, 750">
 				<ul class="page-nav__list">
 					<li class="page-nav__item page-nav__item_main">
 						<a href="index.html" class="page-nav__link">
@@ -72,7 +72,7 @@
 			</nav>
 		</div>
 		<div class="header__right">
-			<nav class="page-nav page-nav_profile" data-da="sidebar, 2, 750">
+			<nav class="page-nav page-nav_profile" data-da="sidebar, 3, 750">
 				<ul class="page-nav__list">
 					<li class="page-nav__item">
 						<a href="profile.html" class="page-nav__link">
@@ -183,8 +183,15 @@
 	</main>
 
 	<aside class="sidebar">
+		<picture class="sidebar__bg">
+			<source class="lazyload"
+				data-srcset="assets/images/sidebar/bg.webp 1x, assets/images/sidebar/bg@2x.webp 2x, assets/images/sidebar/bg@3x.webp 3x, assets/images/sidebar/bg@4x.webp 4x"
+				type="image/webp">
+			<img data-src="assets/images/sidebar/bg.png"
+				data-srcset="assets/images/sidebar/bg@2x.png 2x, assets/images/1@3x.png 3x, assets/images/sidebar/bg@4x.png 4x"
+				width="300" heaght="180" alt="bg">
+		</picture>
 		<div class="sidebar__header">
-	
 			<picture class="sidebar__avatar">
 	
 				<source class="lazyload"
