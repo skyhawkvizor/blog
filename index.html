@@ -343,9 +343,15 @@
 
 	<aside class="sidebar">
 		<div class="sidebar__header">
-			<img src="assets/images/sidebar/avatar.png" srcset="assets/images/sidebar/avatar@2x.png 2x,
-				assets/images/sidebar/avatar@3x.png 3x,
-				assets/images/sidebar/avatar@4x.png 4x" class="sidebar__avatar" width="100" height="100" alt="img">
+	
+			<picture class="sidebar__avatar">
+				<source class="lazyload"
+					data-srcset="assets/images/sidebar/avatar.webp 1x, assets/images/sidebar/avatar@2x.webp 2x, assets/images/sidebar/avatar@3x.webp 3x, assets/images/sidebar/avatar@4x.webp 4x"
+					type="image/webp">
+				<img data-src="assets/images/sidebar/avatar.png"
+					data-srcset="assets/images/sidebar/avatar@2x.png 2x, assets/images/sidebar/avatar@3x.png 3x, assets/images/sidebar/avatar@4x.png 4x"
+					width="100" height="100" alt="img">
+			</picture>
 			<div class="sidebar__name">
 				Дмитрий Валак
 				<span class="sidebar__duty">
