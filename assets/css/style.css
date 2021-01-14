@@ -708,7 +708,6 @@ body {
 }
 
 .page-nav {
-    height: 100%;
     display: inline-block;
 }
 
@@ -944,6 +943,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     opacity: 1;
 }
 
@@ -1299,18 +1299,21 @@ body {
 }
 
 .stories {
-    margin: 0px -0.65em 3em -0.65em;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-pack: center;
-    justify-content: center;
+    margin: 0px 0em 3em 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 13px;
     font-size: 1rem;
 }
 
+@media (max-width: 460px) {
+    .stories {
+        grid-template-columns: 140px 140px 140px 140px;
+        overflow: auto;
+    }
+}
+
 .stories__item {
-    margin: 0px 0.65em 0px 0.65em;
-    width: 100%;
-    max-width: 14em;
     position: relative;
 }
 
