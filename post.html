@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+	header('Cache-Control: max-age=84600');
 	<meta charset="UTF-8">
 	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 	<!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"> -->
