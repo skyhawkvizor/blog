@@ -1498,6 +1498,12 @@ body {
     background-size: 2.2em 2.2em;
 }
 
+@media (max-width: 400px) {
+    .add-article__add-file {
+        background-size: 2em 2em;
+    }
+}
+
 .add-article__add-file:hover {
     background-color: #c5c5c5;
 }
@@ -1510,6 +1516,12 @@ body {
     background-color: #3137c9;
     background-image: url(../images/icons/row-right.svg);
     background-size: 1.7em 1.7em;
+}
+
+@media (max-width: 400px) {
+    .add-article__submit {
+        background-size: 1.5em 1.5em;
+    }
 }
 
 .add-article__submit:hover {

@@ -125,7 +125,14 @@
 						</button>
 					</div>
 					<div class="add-comment__avatar" data-da="add-comment__fields, 0, 500">
-						<img src="assets/images/profile/avatar.png" alt="avatar" class="add-comment__img" width="150" height="150">
+						<picture class="add-comment__img">
+							<source class="lazyload"
+								data-srcset="assets/images/profile/avatar.webp 1x, assets/images/profile/avatar@2x.webp 2x, assets/images/profile/avatar@3x.webp 3x, assets/images/profile/avatar@4x.webp 4x"
+								type="image/webp">
+							<img data-src="assets/images/profile/avatar.png"
+								data-srcset="assets/images/profile/avatar@2x.png 2x, assets/images/profile/avatar@3x.png 3x, assets/images/profile/avatar@4x.png 4x"
+								width="150" height="150" alt="avatar">
+						</picture>
 						<label for="avatar" class="add-comment__download-img">
 							<input type="file" id="avatar">
 							выбрать аватар

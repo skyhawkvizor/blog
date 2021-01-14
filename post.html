@@ -140,7 +140,14 @@
 						posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
 						lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
 					</p>
-					<img src="assets/images/article/3.png" width="557" height="232" alt="img">
+					<picture class="">
+						<source class="lazyload"
+							data-srcset="assets/images/article/3.webp 1x, assets/images/article/3@2x.webp 2x, assets/images/article/3@3x.webp 3x, assets/images/article/3@4x.webp 4x"
+							type="image/webp">
+						<img data-src="assets/images/article/3.png"
+							data-srcset="assets/images/article/3@2x.png 2x, assets/images/article/3@3x.png 3x, assets/images/article/3@4x.png 4x"
+							width="557" height="232" alt="img">
+					</picture>
 					<p class="post__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
 						posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
@@ -214,8 +221,14 @@
 				<ul class="comments">
 					<li class="comments__item">
 						<div class="comments__author">
-							<img src="assets/images/article/author.png" class="comments__img" width="30" height="30"
-								alt="Дмитрий Валак">
+							<picture class="comments__img">
+								<source class="lazyload"
+									data-srcset="assets/images/article/author.webp 1x, assets/images/article/author@2x.webp 2x, assets/images/article/author@3x.webp 3x, assets/images/article/author@4x.webp 4x"
+									type="image/webp">
+								<img data-src="assets/images/article/author.png"
+									data-srcset="assets/images/article/author@2x.png 2x, assets/images/article/author@3x.png 3x, assets/images/article/author@4x.png 4x"
+									width="30" height="30" alt="Sam Stone">
+							</picture>
 							<div class="comments__name">
 								Дмитрий Валак
 							</div>
@@ -229,8 +242,14 @@
 						<ul class="comments">
 							<li class="comments__item">
 								<div class="comments__author">
-									<img src="assets/images/article/author2.png" class="comments__img" width="30" height="30"
-										alt="Дмитрий Валак">
+									<picture class="comments__img">
+										<source class="lazyload"
+											data-srcset="assets/images/article/author2.webp 1x, assets/images/article/author2@2x.webp 2x, assets/images/article/author2@3x.webp 3x, assets/images/article/author2@4x.webp 4x"
+											type="image/webp">
+										<img data-src="assets/images/article/author2.png"
+											data-srcset="assets/images/article/author2@2x.png 2x, assets/images/article/author2@3x.png 3x, assets/images/article/author2@4x.png 4x"
+											width="30" height="30" alt="Sarah Bernal">
+									</picture>
 									<div class="comments__name">
 										Джонни
 									</div>
