@@ -244,9 +244,14 @@
 			
 			<article class="post">
 				<div class="post__header post__header_video video">
-					<video src="assets/video/laptop.mp4" frameborder="0" loading="lazy" controls="controls" allowfullscreen
-						poster="assets\images\article/laptop.jpg" title="video">
+					<video src="assets/video/laptop.mp4" loading="lazy" data-poster="../images/article/laptop.jpg" title="video">
 					</video>
+					<button id="play" class="video__button" title="play">
+						<svg class="video__icon">
+							<use xlink:href="assets/images/icons/play.svg#play"></use>
+						</svg>
+					</button>
+			
 				</div>
 			
 				<h2 class="post__title">
